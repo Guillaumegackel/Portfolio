@@ -53,7 +53,7 @@ client.fetch(query)
             className="app__profiles-item"
             key={about.title + index}
           >
-            <img src={about.imgURL} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
