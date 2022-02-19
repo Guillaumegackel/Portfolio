@@ -4,30 +4,42 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./About.scss";
 
-const abouts = [
-  {
-    title: "Web Development",
-    description: "I am a good Developper",
-    imgURL: images.about01,
-  },
-  {
-    title: "MERN Stack",
-    description: "I am a good Developper",
-    imgURL: images.about02,
-  },
-  {
-    title: "React API",
-    description: "I am a good Developper",
-    imgURL: images.about03,
-  },
-  {
-    title: "Web Animations",
-    description: "I am a good Developper",
-    imgURL: images.about04,
-  },
-];
+import { urlFor, client } from "../../client";
+
+// const Abouts = [
+//   {
+//     title: "Web Development",
+//     description: "I am a good Developper",
+//     imgURL: images.about01,
+//   },
+//   {
+//     title: "MERN Stack",
+//     description: "I am a good Developper",
+//     imgURL: images.about02,
+//   },
+//   {
+//     title: "React API",
+//     description: "I am a good Developper",
+//     imgURL: images.about03,
+//   },
+//   {
+//     title: "Web Animations",
+//     description: "I am a good Developper",
+//     imgURL: images.about04,
+//   },
+// ];
 
 const About = () => {
+const [abouts, setAbouts] =useState([]);
+
+useEffect(()=>{
+const query = '*[_type == "abouts"]';
+
+client.fetch(query)
+.then((data)=> setAbouts(data));
+
+}, []);
+
   return (
     <>
       <h2 className="head-text">I know that <span>Good Dev</span> <br />means <span>Good Business</span></h2>
