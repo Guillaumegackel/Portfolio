@@ -42,7 +42,7 @@ client.fetch(query)
 
   return (
     <>
-      <h2 className="head-text">I know that <span>Good Dev</span> <br />means <span>Good Business</span></h2>
+      <h2 className="head-text">I think <span>Good Dev</span> <br />are <span id="txt-anim" >Good Engineer</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

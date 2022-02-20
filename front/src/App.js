@@ -6,6 +6,11 @@ import { Navbar } from './components';
 
 import './App.scss'
 
+// const txtAnim = document.getElementById('txt-anim');
+
+// console.log(new Typewriter(txtAnim));
+
+
 const App = () => {
   return <div className='app'>
 	  <Navbar />
@@ -15,7 +20,11 @@ const App = () => {
 	  <Work />
 	  <Testimonials />
 	  <Footer />
+
+
   </div>;
+
+
 };
 
 export default App;
