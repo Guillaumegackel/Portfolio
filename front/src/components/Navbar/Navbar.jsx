@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.WebMelogo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
@@ -34,7 +34,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "skills", "contact"].map((item) => (
+              {["home", "about", "work", "skills", "testimonial", "contact"].map((item) => (
                 <li key={item}>
                   {/* La fermeture du menu apres avoir cliqué */}
                   <a href={`#${item}`} onClick={() => setToggle(false)}>

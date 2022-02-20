@@ -6,29 +6,6 @@ import "./About.scss";
 
 import { urlFor, client } from "../../client";
 
-// const Abouts = [
-//   {
-//     title: "Web Development",
-//     description: "I am a good Developper",
-//     imgURL: images.about01,
-//   },
-//   {
-//     title: "MERN Stack",
-//     description: "I am a good Developper",
-//     imgURL: images.about02,
-//   },
-//   {
-//     title: "React API",
-//     description: "I am a good Developper",
-//     imgURL: images.about03,
-//   },
-//   {
-//     title: "Web Animations",
-//     description: "I am a good Developper",
-//     imgURL: images.about04,
-//   },
-// ];
-
 const About = () => {
 const [abouts, setAbouts] =useState([]);
 
@@ -42,7 +19,8 @@ client.fetch(query)
 
   return (
     <>
-      <h2 className="head-text">I think <span>Good Dev</span> <br />are <span id="txt-anim" >Good Engineer</span></h2>
+      <h2 className="head-text">I think <span>
+Good Dev</span> <br />are <span id="txt-anim" >Good <strike>Engineer</strike></span> <br /> Partner/Communicant/Marketer/CoWorker</h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

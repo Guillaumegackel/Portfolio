@@ -35,9 +35,12 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import WebMe from '../assets/WebMe.png';
+import WebMelogo from '../assets/WebMelogo.png';
+
 
 
 export default {
+  WebMelogo,
   WebMe,
   email,
   mobile,
